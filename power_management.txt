@@ -1,0 +1,9 @@
+Disable Lid action
+ArchLinux
+	edit /etc/systemd/logind.conf
+	uncomment HandleLidSwitch=suspend to HandleLidSwitch=ignore
+	 
+Debian (similar method to Arch but a different one is shown)
+	edit /etc/UPower/UPower.conf (as root)
+	change IgnoreLid=false to IgnoreLid=true
+	reboot after the change has been made
